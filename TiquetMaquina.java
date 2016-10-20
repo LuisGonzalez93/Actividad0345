@@ -9,10 +9,10 @@
  * @author David J. Barnes and Michael Kölling
  * @version 2011.07.31
  */
-public class TicketMachine
+public class TiquetMaquina
 {
     // The price of a ticket from this machine.
-    private int price;
+    private int precio;
     // The amount of money entered by a customer so far.
     private int balance;
     // The total amount of money collected by this machine.
@@ -23,9 +23,9 @@ public class TicketMachine
      * Note that the price must be greater than zero, and there
      * are no checks to ensure this.
      */
-    public TicketMachine(int cost)
+    public TiquetMaquina(int coste)
     {
-        price = cost;
+        precio = coste;
         balance = 0;
         total = 0;
     }
@@ -33,9 +33,9 @@ public class TicketMachine
     /**
      * Return the price of a ticket.
      */
-    public int getPrice()
+    public int getPrecio()
     {
-        return price;
+        return precio;
     }
 
     /**
@@ -50,9 +50,9 @@ public class TicketMachine
     /**
      * Receive an amount of money from a customer.
      */
-    public void insertMoney(int amount)
+    public void introducirDinero(int cantidad)
     {
-        balance = balance + amount;
+        balance = balance + cantidad;
     }
 
     /**
@@ -60,13 +60,13 @@ public class TicketMachine
      * Update the total collected and
      * reduce the balance to zero.
      */
-    public void printTicket()
+    public void imprimirTiquet()
     {
         // Simulate the printing of a ticket.
         System.out.println("##################");
         System.out.println("# The BlueJ Line");
         System.out.println("# Ticket");
-        System.out.println("# " + price + " cents.");
+        System.out.println("# " + precio + " centimos");
         System.out.println("##################");
         System.out.println();
 
