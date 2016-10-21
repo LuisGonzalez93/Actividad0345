@@ -60,7 +60,7 @@ public class TicketMaquina
      * Update the total collected and
      * reduce the balance to zero.
      */
-    public void imprimirTiquet()
+    public void imprimirTicket()
     {
         // Simulate the printing of a ticket.
         System.out.println("##################");
