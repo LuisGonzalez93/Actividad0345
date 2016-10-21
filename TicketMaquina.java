@@ -9,7 +9,7 @@
  * @author David J. Barnes and Michael Kölling
  * @version 2011.07.31
  */
-public class TiquetMaquina
+public class TicketMaquina
 {
     // The price of a ticket from this machine.
     private int precio;
@@ -23,7 +23,7 @@ public class TiquetMaquina
      * Note that the price must be greater than zero, and there
      * are no checks to ensure this.
      */
-    public TiquetMaquina(int coste)
+    public TicketMaquina(int coste)
     {
         precio = coste;
         balance = 0;
@@ -74,5 +74,9 @@ public class TiquetMaquina
         total = total + balance;
         // Clear the balance.
         balance = 0;
+    }
+    public int getTotal()
+    {
+        return total;
     }
 }
