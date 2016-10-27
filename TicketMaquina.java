@@ -75,6 +75,10 @@ public class TicketMaquina
         // Clear the balance.
         balance = 0;
     }
+    public void prompt()
+    {
+        System.out.println("Porfavor, introduce la cantidad correcta de dinero");
+    }
     public int getTotal()
     {
         return total;

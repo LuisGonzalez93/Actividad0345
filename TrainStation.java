@@ -9,20 +9,20 @@ public class TrainStation
 {
   private TicketMaquina maquina1;
     private TicketMaquina maquina2;
-    private int totalMoney;
+    private int totalDinero;
 
     public TrainStation()
     {
         maquina1 = new TicketMaquina(300);
         maquina2 = new TicketMaquina(200);
-        totalMoney = 0;
+        totalDinero = 0;
   }
   
   public void printTotalDinero()
     {
-        totalMoney = maquina1.getTotal();
-        totalMoney = totalMoney + maquina2.getTotal();
-    System.out.println(totalMoney);
+        totalDinero = maquina1.getTotal();
+        totalDinero = totalDinero + maquina2.getTotal();
+    System.out.println(totalDinero);
 	}
 public void ventaBillete()
 {
