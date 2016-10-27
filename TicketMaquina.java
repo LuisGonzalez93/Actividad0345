@@ -79,6 +79,10 @@ public class TicketMaquina
     {
         System.out.println("Porfavor, introduce la cantidad correcta de dinero");
     }
+    public void mostrarPrecio()
+    {
+     System.out.println("El precio del billete es" + precio + "euros");   
+    }
     public int getTotal()
     {
         return total;
